@@ -18,7 +18,7 @@ function NewNote({ user }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("/notes", {
+    fetch("/api/notes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

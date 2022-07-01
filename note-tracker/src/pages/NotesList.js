@@ -7,7 +7,7 @@ function NotesList({ user, setUser }) {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
-    fetch("/notes")
+    fetch("/api/notes")
       .then((r) => r.json())
       .then(setNotes);
   }, []);
