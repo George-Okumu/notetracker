@@ -67,6 +67,14 @@ function NavBar({ user, setUser }) {
             <span>Settings</span>
           </p>
         </NavLink>
+        <NavLink to="/calendar"
+          exact="true"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+          <p className=" flex items-center space-x-2 py-1  group hover:border-r-4 hover:border-r-blue-600 hover:font-semibold dark:hover:text-white ">
+            <img src="https://media.istockphoto.com/photos/yellow-notification-bell-ringing-and-calendar-deadline-on-brown-3d-picture-id1353142542?k=20&m=1353142542&s=612x612&w=0&h=mYMq16KiBvVIoCcM20qNCt5LgHC3Oa_k8OqvsU3FKCc=" height="20px" width="25px" />
+            <span>Calendar</span>
+          </p>
+        </NavLink>
         <button className="flex items-center space-x-2 py-1  group hover:border-r-4 hover:border-r-blue-600 hover:font-semibold dark:hover:text-white" onClick={handleLogoutClick}>
           <svg className="h-5 w-5 group-hover:fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <g>
